@@ -36,8 +36,22 @@
                 <label for="amount">Amount <br>(negative - expense, positive - income)</label>
                 <input type="number" id="amount" placeholder="Enter amount....">
             </div>
+            <div class="form-control">
+                <label for="text">Category</label>
+                <input type="text" id="category" placeholder="Enter Category....">
+            </div>
+            <div class="form-control">
+                <label for="start">Date</label>
+                <input type="date" id="date">
+            </div>
+            <div class="form-control">
+                <label for="textarea">TextArea</label>
+                <textarea id="desc" name="desc", rows="4", cols="42"></textarea>
+            </div>
             <button class="btn">Add Transaction</button>
         </form>
+        <div id="overlay" onclick="off()">
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
